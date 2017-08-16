@@ -49,8 +49,8 @@ class ViewController: UIViewController {
         
         let cancel1Btn = UIAlertAction(title: "취소", style: .cancel, handler: nil)
 
-        let confirm1lBtn = UIAlertAction(title: "확인", style: .cancel, handler: {alertAction in
-//
+        let confirm1lBtn = UIAlertAction(title: "확인", style: .default, handler: {alertAction in
+        
         let id = loginAlert.textFields?[0].text
         let pwd = loginAlert.textFields?[1].text
             
@@ -62,9 +62,9 @@ class ViewController: UIViewController {
             }
         
         })
-//        
-//        loginAlert.addAction(cancel1Btn)
-//        loginAlert.addAction(confirm1lBtn)
+        
+        loginAlert.addAction(cancel1Btn)
+        loginAlert.addAction(confirm1lBtn)
         
     }
     
